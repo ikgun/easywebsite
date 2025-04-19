@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Edward Munch</title>
+  </head>
+  <body class="bg-[#F9F8F9] font-playfair">
+    <nav class="bg-[#290025] space-x-7 text-white p-7 shadow">
+      <a
+        href="artists.html"
+        class="p-2 rounded-md hover:bg-[#9A8096]"
+        >Home</a
+      >
+    </nav>
+
+    <main class="flex flex-col">
+      <h1 class="text-center m-10 font-bold text-5xl">Edvard Munch</h1>
+      <section class="flex flex-col-2 shadow">
+        <img
+          class="w-1/3 m-10 shadow"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Edvard_Munch_-_Self-Portrait_-_Google_Art_Project_%28533070%29.jpg/800px-Edvard_Munch_-_Self-Portrait_-_Google_Art_Project_%28533070%29.jpg"
+          alt="Edward Munch"
+        />
+        <div class="p-7 flex flex-col items-end justify-evenly">
+          <p class="p-7 text-center shadow">
+            Edvard Munch painted silence screaming. Born in the chill of Norway,
+            where shadows linger long, he was shaped by death before he knew
+            life — a mother lost, a sister gone, a childhood heavy with grief.
+            The ghosts of his past never left him; they whispered through every
+            brushstroke. He painted not what the eyes see, but what the soul
+            feels in its loneliest hour — despair stretched across a bridge, a
+            sky on fire, a mouth frozen in eternal echo.
+            <br /><br />
+            He lived like his art: restless, haunted, searching. Love eluded
+            him, or perhaps he fled from it, fearing the ache it promised.
+            Solitude became his companion, and yet in that solitude, he created
+            intimacy on canvas — raw, trembling, unmasked. Munch gave voice to
+            the quiet agony that lives in all of us, and in doing so, he became
+            a mirror to the modern heart: cracked, confused, but still beating.
+            His scream still hangs in the air, not just in a gallery, but in the
+            spaces where we feel too much and say too little.
+          </p>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <h1 class="text-center m-10 font-bold text-5xl">Gallery</h1>
+      <section class="my-16 mx-20 grid grid-cols-3 gap-4">
+        <!-- IMG 1 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img1" class="peer hidden" />
+
+          <label for="img1" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/800px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg"
+              alt="The Scream"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img1"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/800px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg"
+                alt="The Scream"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">
+                The Scream
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 2 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img2" class="peer hidden" />
+
+          <label for="img2" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Edvard_Munch_-_The_Living-Room_of_the_Misses_Munch_in_Pilestredet_61_%281881%29.jpg/1024px-Edvard_Munch_-_The_Living-Room_of_the_Misses_Munch_in_Pilestredet_61_%281881%29.jpg"
+              alt="The Living-Room of the Misses Munch in Pilestredet 61"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img2"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Edvard_Munch_-_The_Living-Room_of_the_Misses_Munch_in_Pilestredet_61_%281881%29.jpg/1024px-Edvard_Munch_-_The_Living-Room_of_the_Misses_Munch_in_Pilestredet_61_%281881%29.jpg"
+                alt="The Living-Room of the Misses Munch in Pilestredet 61"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">The Living-Room of the Misses Munch in Pilestredet 61</p>
+            </div>
+          </div>
+        </div>
+
+        <!--IMG 3-->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img3" class="peer hidden" />
+
+          <label for="img3" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Edvard_Munch_-_Morning_%281884%29.jpg/1024px-Edvard_Munch_-_Morning_%281884%29.jpg"
+              alt="Morning"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img3"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Edvard_Munch_-_Morning_%281884%29.jpg/1024px-Edvard_Munch_-_Morning_%281884%29.jpg"
+                alt="Morning"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">Morning</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 4 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img4" class="peer hidden" />
+
+          <label for="img4" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Edvard_Munch_-_Vampire_%281893%29%2C_Munchmuseet.jpg/1024px-Edvard_Munch_-_Vampire_%281893%29%2C_Munchmuseet.jpg"
+              alt="Vampire"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img4"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Edvard_Munch_-_Vampire_%281893%29%2C_Munchmuseet.jpg/1024px-Edvard_Munch_-_Vampire_%281893%29%2C_Munchmuseet.jpg"
+                alt="Vampire"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">Vampire</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 5 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img5" class="peer hidden" />
+
+          <label for="img5" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/09/Edvard_Munch_-_Death_and_the_Child_%281899%29%2C_Kunsthalle_Bremen.jpg"
+              alt="Death and the Child"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img5"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/09/Edvard_Munch_-_Death_and_the_Child_%281899%29%2C_Kunsthalle_Bremen.jpg"
+                alt="Death and the Child"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">
+                Death and the Child
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 6 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img6" class="peer hidden" />
+
+          <label for="img6" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Edvard_Munch_-_Eye_in_Eye.jpg/800px-Edvard_Munch_-_Eye_in_Eye.jpg"
+              alt="Eye in Eye"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img6"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Edvard_Munch_-_Eye_in_Eye.jpg/800px-Edvard_Munch_-_Eye_in_Eye.jpg"
+                alt="Eye in Eye"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">
+                Eye in Eye
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 7 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img7" class="peer hidden" />
+
+          <label for="img7" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Edvard_Munch_-_Head_by_Head.jpg/800px-Edvard_Munch_-_Head_by_Head.jpg"
+              alt="Head by Head"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img7"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Edvard_Munch_-_Head_by_Head.jpg/800px-Edvard_Munch_-_Head_by_Head.jpg"
+                alt="Head by Head"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">
+                Head by Head
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 8 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img8" class="peer hidden" />
+
+          <label for="img8" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Solen_av_Edvard_Munch.jpg/1920px-Solen_av_Edvard_Munch.jpg"
+              alt="The Sun"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img8"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Solen_av_Edvard_Munch.jpg/1920px-Solen_av_Edvard_Munch.jpg"
+                alt="The Sun"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">
+                The Sun
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 9 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img9" class="peer hidden" />
+
+          <label for="img9" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/2/23/Landscape_with_Woman_Walking_by_a_Lake.jpg"
+              alt="Landscape with Woman Walking by a Lake"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img9"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/23/Landscape_with_Woman_Walking_by_a_Lake.jpg"
+                alt="Landscape with Woman Walking by a Lake"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">
+                Landscape with Woman Walking by a Lake
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- GALLERY END -->
+    </main>
+    <footer class="bg-[#290025] text-center text-white text-xl py-5">
+      Ikbal Gundogdu | 2025 &copy;
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Van Gogh</title>
+  </head>
+  <body class="bg-[#F9F8F9] font-playfair">
+    <nav class="bg-[#290025] space-x-7 text-white p-7 shadow">
+        <a
+          href="artists.html"
+          class="p-2 rounded-md hover:bg-[#9A8096]"
+          >Home</a
+        >
+      </nav>
+
+    <main class="flex flex-col">
+      <h1 class="text-center m-10 font-bold text-5xl">Van Gogh</h1>
+      <section class="flex flex-col-2 shadow">
+        <img
+          class="w-1/2 m-10 shadow"
+          src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-sKqhFCWv1OTtomWp0iUknlzam8z5iJn2XTlltx1cHzTlQRQrfNk7So4DDCunLjv0ePwIMdNns_EgGjVH_4QkwA"
+          alt="van gogh"
+        />
+        <div class="p-7 flex flex-col items-end justify-evenly">
+          <p class="p-7 text-center shadow">
+            Vincent van Gogh lived a life as turbulent as his skies — born in
+            1853 in the Netherlands, he wandered through dreams and despair in
+            search of meaning. He worked as a preacher, a bookseller, a teacher,
+            never quite fitting into the world’s frame. It wasn’t until his late
+            twenties that he turned to painting, and in just a decade, he
+            created over 2,000 works, each pulsing with raw emotion. Struggling
+            with mental illness and loneliness, he found solace in nature and
+            art — painting fields, flowers, and stars with a fevered, tender
+            hand. Though he died by his own hand at 37, nearly unknown, his soul
+            now lives eternal in every sunflower, every swirling sky. 
+            <br><br>
+            His palette spoke when words failed — cobalt nights, golden wheat, and
+            blazing blooms echoing the chaos within. In Arles, he dreamed of an
+            artist’s haven, painting the Yellow House and his humble room with
+            quiet hope. His friendship with Gauguin ended in madness and a
+            severed ear, yet even in the asylum at Saint-Rémy, he created with
+            unrelenting passion. Starry Night was born there — a cry into the
+            cosmos, a glimpse of infinity through tortured eyes. Van Gogh gave
+            the world not polished perfection, but aching truth. And though he
+            walked alone in life, he now stands among the giants, his legacy a
+            reminder that beauty often grows from broken places.
+          </p>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <h1 class="text-center m-10 font-bold text-5xl">Gallery</h1>
+      <section class="my-16 mx-20 grid grid-cols-3 gap-4">
+        <!-- IMG 1 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img1" class="peer hidden" />
+
+          <label for="img1" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+              alt="starry night"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img1"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+                alt="starry night"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">Starry night</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 2 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img2" class="peer hidden" />
+
+          <label for="img2" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://imgc.allpostersimages.com/img/posters/vincent-van-gogh-vase-with-fifteen-sunflowers_u-l-f5b8jh0.jpg?artHeight=550&artPerspective=n&artWidth=550&background=ffffff"
+              alt="vase with sunflowers"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img2"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://imgc.allpostersimages.com/img/posters/vincent-van-gogh-vase-with-fifteen-sunflowers_u-l-f5b8jh0.jpg?artHeight=550&artPerspective=n&artWidth=550&background=ffffff"
+                alt="vase with sunflowers"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">
+                Vase with sunflowers
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--IMG 3-->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img3" class="peer hidden" />
+
+          <label for="img3" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg/1024px-Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg"
+              alt="almond blossoms"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img3"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg/1024px-Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg"
+                alt="almond blossoms"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">Almond blossoms</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 4 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img4" class="peer hidden" />
+
+          <label for="img4" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Vincent_van_Gogh_%281853-1890%29_Caf%C3%A9terras_bij_nacht_%28place_du_Forum%29_Kr%C3%B6ller-M%C3%BCller_Museum_Otterlo_23-8-2016_13-35-40.JPG/800px-Vincent_van_Gogh_%281853-1890%29_Caf%C3%A9terras_bij_nacht_%28place_du_Forum%29_Kr%C3%B6ller-M%C3%BCller_Museum_Otterlo_23-8-2016_13-35-40.JPG"
+              alt="cafe terrace at night"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img4"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Vincent_van_Gogh_%281853-1890%29_Caf%C3%A9terras_bij_nacht_%28place_du_Forum%29_Kr%C3%B6ller-M%C3%BCller_Museum_Otterlo_23-8-2016_13-35-40.JPG/800px-Vincent_van_Gogh_%281853-1890%29_Caf%C3%A9terras_bij_nacht_%28place_du_Forum%29_Kr%C3%B6ller-M%C3%BCller_Museum_Otterlo_23-8-2016_13-35-40.JPG"
+                alt="cafe terrace at night"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">
+                Cafe terrace at night
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 5 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img5" class="peer hidden" />
+
+          <label for="img5" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Irises-Vincent_van_Gogh.jpg/1024px-Irises-Vincent_van_Gogh.jpg"
+              alt="irises"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img5"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Irises-Vincent_van_Gogh.jpg/1024px-Irises-Vincent_van_Gogh.jpg"
+                alt="irises"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">Irises</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 6 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img6" class="peer hidden" />
+
+          <label for="img6" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Van-willem-vincent-gogh-die-kartoffelesser-03850.jpg/1280px-Van-willem-vincent-gogh-die-kartoffelesser-03850.jpg"
+              alt="the patato eaters"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img6"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Van-willem-vincent-gogh-die-kartoffelesser-03850.jpg/1280px-Van-willem-vincent-gogh-die-kartoffelesser-03850.jpg"
+                alt="the patato eaters"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">
+                The patato eaters
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 7 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img7" class="peer hidden" />
+
+          <label for="img7" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg/1024px-Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg"
+              alt="bedroom in arles"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img7"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg/1024px-Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg"
+                alt="bedroom in arles"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">Bedroom in arles</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 8 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img8" class="peer hidden" />
+
+          <label for="img8" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Vincent_van_Gogh_-_Head_of_a_skeleton_with_a_burning_cigarette_-_Google_Art_Project.jpg/800px-Vincent_van_Gogh_-_Head_of_a_skeleton_with_a_burning_cigarette_-_Google_Art_Project.jpg"
+              alt="head of a skeleton with a burning cigarette"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img8"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Vincent_van_Gogh_-_Head_of_a_skeleton_with_a_burning_cigarette_-_Google_Art_Project.jpg/800px-Vincent_van_Gogh_-_Head_of_a_skeleton_with_a_burning_cigarette_-_Google_Art_Project.jpg"
+                alt="head of a skeleton with a burning cigarette"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">
+                Head of a skeleton with a burning cigarette
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMG 9 -->
+        <div class="relative overflow-hidden">
+          <input type="checkbox" id="img9" class="peer hidden" />
+
+          <label for="img9" class="cursor-pointer">
+            <img
+              class="shadow w-full h-full object-cover opacity-80 hover:opacity-100 transition-all hover:scale-110"
+              src="https://images.nortonsimon.org/iipsrv/iipsrv.fcgi?QLT=100&IIIF=F19851P.jpf/full/!668,1002/0/default.jpg"
+              alt="head of peasant woman in a white bonnet"
+            />
+          </label>
+
+          <div
+            class="fixed inset-0 z-50 hidden peer-checked:flex items-center justify-center bg-black/60 backdrop-blur-md transition-all"
+          >
+            <label
+              for="img9"
+              class="absolute top-0 right-4 text-white text-5xl cursor-pointer z-20"
+              >&times;</label
+            >
+            <div>
+              <img
+                src="https://images.nortonsimon.org/iipsrv/iipsrv.fcgi?QLT=100&IIIF=F19851P.jpf/full/!668,1002/0/default.jpg"
+                alt="head of peasant woman in a white bonnet"
+                class="w-full max-h-[80vh] object-contain"
+              />
+              <p class="text-center my-5 text-white italic">
+                Head of peasant woman in a white bonnet
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- GALLERY END -->
+    </main>
+    <footer class="bg-[#290025] text-center text-white text-xl py-5">
+      Ikbal Gundogdu | 2025 &copy;
+    </footer>
+  </body>
+</html>
