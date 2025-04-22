@@ -12,19 +12,36 @@
     <title>Frida Kahlo</title>
   </head>
   <body class="bg-[#F9F8F9] font-playfair">
-    <nav class="bg-[#290025] space-x-7 text-white p-7 shadow">
-        <a
-          href="artists.html"
-          class="p-2 rounded-md hover:bg-[#9A8096]"
-          >Home</a
-        >
-      </nav>
+    
+    <nav class="bg-[#290025] text-white shadow">
+      <div class="flex flex-wrap p-4">
+        
+        <input type="checkbox" id="navbar-toggle" class="hidden peer" />
+
+        <label for="navbar-toggle" class="p-2 w-10 h-10 md:hidden cursor-pointer" aria-controls="navbar-default" aria-expanded="false">
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+        </label>
+    
+        <div class="hidden peer-checked:block w-full md:block md:w-auto" id="navbar-default">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0">
+            <li>
+              <a href="artists.html" class="block py-2 px-3 rounded-sm hover:bg-[#9A8096] ">Home</a>
+            </li>
+            <li>
+              <a href="exhibitions.html" class="block py-2 px-3 rounded-sm hover:bg-[#9A8096]">Exhibitions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <main class="flex flex-col">
-      <h1 class="text-center m-10 font-bold text-5xl">Frida Kahlo</h1>
-      <section class="flex flex-col-2 shadow">
+      <h1 class="text-center text-4xl my-10 md:text-5xl font-bold">Frida Kahlo</h1>
+      <section class="flex flex-col md:flex-row items-start md:items-center shadow mb-10">
         <img
-          class="w-1/3 m-10 shadow"
+        class="w-full h-auto md:w-1/2 max-w-[600px] mx-auto px-4  sm:p-6 md:m-10"
           src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRTT2liZ-lJyuWGzODv9kgZJdpnOyBMxM-QM-naQqnqdGLFGC0LSxGowaxZ-k1_WS5Acm4vjW4mhsiDB_1uJhJuxmeojQkgcbd6c5X5IttvK8otbbZPQhuFU77inPlOMd8AnHsI9nTx"
           alt="frida kahlo"
         />
@@ -50,11 +67,12 @@
         </div>
       </section>
 
+      
+      <h1 class="text-center font-bold text-4xl md:text-5xl">Gallery</h1>
       <!-- GALLERY -->
-      <h1 class="text-center m-10 font-bold text-5xl">Gallery</h1>
-      <section class="my-16 mx-20 grid grid-cols-3 gap-4">
+      <section class="my-16 mx-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         <!-- IMG 1 -->
-        <div class="relative overflow-hidden">
+        <div class="overflow-hidden">
           <input type="checkbox" id="img1" class="peer hidden" />
 
           <label for="img1" class="cursor-pointer">
@@ -86,7 +104,7 @@
         </div>
 
         <!-- IMG 2 -->
-        <div class="relative overflow-hidden">
+        <div class="overflow-hidden">
           <input type="checkbox" id="img2" class="peer hidden" />
 
           <label for="img2" class="cursor-pointer">
@@ -120,7 +138,7 @@
         </div>
 
         <!--IMG 3-->
-        <div class="relative overflow-hidden">
+        <div class="overflow-hidden">
           <input type="checkbox" id="img3" class="peer hidden" />
 
           <label for="img3" class="cursor-pointer">
@@ -152,7 +170,7 @@
         </div>
 
         <!-- IMG 4 -->
-        <div class="relative overflow-hidden">
+        <div class="overflow-hidden">
           <input type="checkbox" id="img4" class="peer hidden" />
 
           <label for="img4" class="cursor-pointer">
@@ -186,7 +204,7 @@
         </div>
 
         <!-- IMG 5 -->
-        <div class="relative overflow-hidden">
+        <div class="overflow-hidden">
           <input type="checkbox" id="img5" class="peer hidden" />
 
           <label for="img5" class="cursor-pointer">
@@ -218,7 +236,7 @@
         </div>
 
         <!-- IMG 6 -->
-        <div class="relative overflow-hidden">
+        <div class="overflow-hidden">
           <input type="checkbox" id="img6" class="peer hidden" />
 
           <label for="img6" class="cursor-pointer">
@@ -252,7 +270,7 @@
         </div>
 
         <!-- IMG 7 -->
-        <div class="relative overflow-hidden">
+        <div class="overflow-hidden">
           <input type="checkbox" id="img7" class="peer hidden" />
 
           <label for="img7" class="cursor-pointer">
@@ -284,7 +302,7 @@
         </div>
 
         <!-- IMG 8 -->
-        <div class="relative overflow-hidden">
+        <div class="overflow-hidden">
           <input type="checkbox" id="img8" class="peer hidden" />
 
           <label for="img8" class="cursor-pointer">
@@ -318,7 +336,7 @@
         </div>
 
         <!-- IMG 9 -->
-        <div class="relative overflow-hidden">
+        <div class="overflow-hidden">
           <input type="checkbox" id="img9" class="peer hidden" />
 
           <label for="img9" class="cursor-pointer">
@@ -351,6 +369,23 @@
         </div>
       </section>
       <!-- GALLERY END -->
+
+      <hr class="mx-10">
+      <p class="text-center pt-5 italic">Check out other artists</p>
+      <div class="flex -space-x-4 rtl:space-x-reverse justify-center my-10">
+        <a href="vangogh2.html"
+          ><img
+            class="border-2 border-white w-20 h-20 rounded-full object-cover transition-transform duration-300 hover:scale-110"
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-sKqhFCWv1OTtomWp0iUknlzam8z5iJn2XTlltx1cHzTlQRQrfNk7So4DDCunLjv0ePwIMdNns_EgGjVH_4QkwA"
+            title="Go to Van Gogh's page!"
+        /></a>
+        <a href="edvardmunch2.html"
+          ><img
+            class="border-2 border-white w-20 h-20 rounded-full object-cover transition-transform duration-300 hover:scale-110"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Edvard_Munch_-_Self-Portrait_-_Google_Art_Project_%28533070%29.jpg/800px-Edvard_Munch_-_Self-Portrait_-_Google_Art_Project_%28533070%29.jpg"
+            title="Go to Edvard Munch's page!"
+        /></a>
+      </div>
     </main>
     <footer class="bg-[#290025] text-center text-white text-xl py-5">
       Ikbal Gundogdu | 2025 &copy;

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Artists</title>
+  </head>
+  <body class="bg-[#F9F8F9] font-playfair">
+    <nav class="bg-[#290025] text-white shadow">
+      <div class="flex flex-wrap p-4">
+        <input type="checkbox" id="navbar-toggle" class="hidden peer" />
+
+        <label
+          for="navbar-toggle"
+          class="p-2 w-10 h-10 md:hidden cursor-pointer"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </label>
+
+        <div
+          class="hidden peer-checked:block w-full md:block md:w-auto"
+          id="navbar-default"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0"
+          >
+            <li>
+              <a
+                href="artists.html"
+                class="block py-2 px-3 rounded-sm hover:bg-[#9A8096]"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 rounded-sm hover:bg-[#9A8096] font-bold border"
+                >Exhibitions</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <h1 class="text-center m-10 font-bold text-5xl">Exhibitions</h1>
+
+      <section
+        class="flex flex-col lg:flex-row lg:flex-wrap items-center m-10 pt-10 gap-4"
+      >
+        <div
+          class="basis-1/3 h-[600px] w-full md:max-w-sm rounded overflow-hidden shadow-lg flex flex-col justify-between"
+        >
+          <img
+            class="w-full"
+            src="https://www.visitstockholm.com/media/images/kahlo.width-1280.jpg"
+            alt="Frida Kahlo - Her Photos"
+          />
+          <div class="px-6 py-4 flex-1">
+            <div class="font-bold text-xl mb-2">Frida Kahlo - Her Photos</div>
+            <p class="text-gray-700 text-base">
+              Frida Kahlo – Her Photos offers a rare glimpse into the private
+              world of the iconic Mexican artist. Through personal photographs,
+              the exhibition unveils the depth and complexity of her life. Since
+              debuting in Mexico City in 2009, it has captivated nearly a
+              million visitors across twenty cities worldwide.
+              <br /><br /><a
+                href="https://www.visitstockholm.com/events/frida-kahlo-her-photos/2023-10-01/"
+                target="_blank"
+                class="text-[#8102CA] font-bold"
+                >Read more at Visit Stockholm's page!</a
+              >
+            </p>
+          </div>
+          <div class="flex items-center gap-2 px-6 pb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            <p>Kulturhuset Stadsteatern</p>
+          </div>
+        </div>
+
+        <div
+          class="basis-1/3 w-full md:max-w-sm rounded overflow-hidden shadow-lg flex flex-col justify-between h-[600px]"
+        >
+          <img
+            class="w-full"
+            src="https://www.visitstockholm.com/media/images/imagine-van-gogh.width-1280.jpg"
+            alt="Imagine Van Gogh"
+          />
+          <div class="px-6 py-4 flex-1">
+            <div class="font-bold text-xl mb-2">Imagine Van Gogh</div>
+            <p class="text-gray-700 text-base">
+              Step into Van Gogh’s world as his iconic works come alive across
+              walls and floors in Artipelag’s immersive Artbox. Set to the music
+              of Mozart, Bach, and Satie, it’s a multisensory journey through
+              art and sound.
+              <br /><br /><a
+                href="https://www.visitstockholm.com/events/imagine-van-gogh/2025-02-02/"
+                target="_blank"
+                class="text-[#8102CA] font-bold"
+                >Read more at Visit Stockholm's page!</a
+              >
+            </p>
+          </div>
+          <div class="flex items-center gap-2 px-6 pb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            <p>Artipelag</p>
+          </div>
+        </div>
+
+        <div
+          class="basis-1/3 w-full md:max-w-sm rounded overflow-hidden shadow-lg flex flex-col justify-between h-[600px]"
+        >
+          <img
+            class="w-full"
+            src="https://www.munchmuseet.no/globalassets/kunstverk/2025-utstillinger/georg-baselitz/baselitz_georg__1991_008__r_.png?mode=crop&quality=75&w=1400&h=700&crop=0,348,2953,1824"
+            alt="georg-baselitz"
+          />
+          <div class="px-6 py-4 flex-1">
+            <div class="font-bold text-xl mb-2">
+              Georg Baselitz - <em>Feet First</em>
+            </div>
+            <p class="text-gray-700 text-base">
+              Feet First is the largest exhibition of Georg Baselitz’s work in
+              Norway, showcasing over 80 pieces from the 1960s to today. His
+              bold, upside-down figures, haunting landscapes, and reflections on
+              aging reveal a raw, expressive style. Deeply inspired by Edvard
+              Munch, Baselitz pays tribute through playful yet powerful
+              references throughout the exhibition.
+              <br /><br /><a
+                href="https://www.munchmuseet.no/en/exhibitions/georg-baselitz/"
+                target="_blank"
+                class="text-[#8102CA] font-bold"
+                >Read more at Munch Museum's page!</a
+              >
+            </p>
+          </div>
+          <div class="flex items-center gap-2 px-6 pb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            <p>Munchmuseet</p>
+          </div>
+        </div>
+
+        <div
+          class="basis-1/3 w-full md:max-w-sm md:min-h-[600px] rounded overflow-hidden shadow-lg flex flex-col justify-between h-[600px]"
+        >
+          <img
+            class="w-full h-1/3 object-cover object-top"
+            src="https://www.npg.org.uk/assets/image-cache/uploads/images/Self_Portrait_1882_83_Edvard_Munch_Fredrik_Birkelund_Oslo_Museum.3b281d58.webp"
+            alt="self portrait of edvard munch"
+          />
+          <div class="px-6 py-4 flex-1">
+            <div class="font-bold text-xl mb-2">Edvard Munch Portraits</div>
+            <p class="text-gray-700 text-base">
+              Edvard Munch, known as one of the greatest portrait artists of the
+              19th and 20th centuries, created powerful portraits of family,
+              friends, and figures from all walks of life. Edvard Munch
+              Portraits is the first UK exhibition dedicated to this
+              often-overlooked aspect of his work, showcasing portraits painted
+              both for commissions and personal reasons, many of which transcend
+              their subjects to explore universal themes of the human
+              experience.
+              <br /><br /><a
+                href="https://www.npg.org.uk/whatson/exhibitions/2025/edvard-munch-portraits/"
+                target="_blank"
+                class="text-[#8102CA] font-bold"
+                >Read more at NPG's page!</a
+              >
+            </p>
+          </div>
+          <div class="flex items-center gap-2 px-6 pb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            <p>The National Portrait Gallery</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#290025] text-center text-white text-xl py-5">
+      Ikbal Gundogdu | 2025 &copy;
+    </footer>
+  </body>
+</html>
